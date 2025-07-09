@@ -46,7 +46,7 @@ app.get("/actuator/info", async (_req: Request, res: Response) => {
     res.json(info);
   } catch (err) {
     console.error("Failed to get info:", err);
-    res.status(500).json({ status: "DOWN", error: String(err) });
+    res.status(500).json({ error: String(err) });
   }
 })
 
