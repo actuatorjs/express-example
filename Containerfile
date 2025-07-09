@@ -1,8 +1,10 @@
-FROM oven/bun:slim AS base
+FROM oven/bun:alpine AS base
+
+RUN apk add --no-cache git
 
 WORKDIR /app
 
-COPY package.json bun.lock .git ./
+COPY package.json bun.lock ./
 RUN bun install --production
 
 COPY . .

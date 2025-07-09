@@ -16,7 +16,6 @@ build
 Thumbs.db
 
 # Git
-.git
 .gitignore
 
 # Editor config
