@@ -1,0 +1,36 @@
+# Environment artifacts
+node_modules
+bun.lockb
+*.log
+npm-debug.log*
+bun-debug.log*
+
+# Output folders
+dist
+build
+.out
+.cache
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+
+# Editor config
+.vscode
+.idea
+*.swp
+
+# Test & coverage
+coverage
+*.test.*
+*.spec.*
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.*
+

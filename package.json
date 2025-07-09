@@ -1,0 +1,24 @@
+{
+	"name": "express",
+	"module": "index.ts",
+  "version": "0.0.1",
+	"type": "module",
+	"private": true,
+	"devDependencies": {
+		"@types/bun": "latest",
+		"@types/express": "^5.0.3",
+		"@types/pg": "^8.15.4"
+	},
+	"scripts": {
+		"dev": "bun run index.ts -w",
+    "build": "bun build index.ts --outdir dist --minify --target node && bunx generate-info"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"@actuatorjs/actuatorjs": "^0.0.4",
+		"express": "^5.1.0",
+		"pg": "^8.16.3"
+	}
+}
