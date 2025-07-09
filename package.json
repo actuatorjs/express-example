@@ -10,7 +10,7 @@
 		"@types/pg": "^8.15.4"
 	},
 	"scripts": {
-		"dev": "bun run index.ts -w",
+		"dev": "bun run --env-file=env/dev.env index.ts -w",
     "build": "bun build index.ts --outdir dist --minify --target node && bunx generate-info"
 	},
 	"peerDependencies": {

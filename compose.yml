@@ -17,5 +17,7 @@ services:
     build:
       context: .
       dockerfile: Containerfile
+    environment:
+      DB_HOST: express-actuatorjs-db
     ports:
       - "3000:3000"
